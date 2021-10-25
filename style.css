@@ -2,19 +2,24 @@
   font-family: TheRainmaker;
   src: url(fonts/The\ Rainmaker.otf);
 }
-/* h1 {
-  font-family: "TheRainmaker";
-} */
+
 body {
   margin: 10px;
   font-family: "Ubuntu", sans-serif;
 }
+
 #about_me {
   font-family: "TheRainmaker";
   color: rgb(211, 16, 16);
 }
+
+.dark-mode #about_me {
+  color: #ebfffc;
+}
+
 .dark-mode {
-  background-color: #222222;
+  /* background-color: #222222; */
+  background-color: #273146;
   color: white;
 }
 .dark-mode #gif {
@@ -27,6 +32,7 @@ body {
 }
 .dark-mode a {
   color: rgb(0, 129, 250);
+  /* color: #7b8994; */
   text-decoration: none;
 }
 a {
@@ -40,19 +46,20 @@ a {
 #icon {
   margin-left: 5px;
   margin-right: 5px;
-  /* padding: auto; */
 }
 
 .h4 {
   margin-bottom: 12px;
   font-family: "Comic Neue", cursive;
-  /* font-family: "TheRainmaker"; */
   color: rgb(211, 16, 16);
+}
+
+.dark-mode .h4 {
+  color: #acbdc2;
 }
 
 .light-theme {
   content: "Light Theme";
-  /* width: 30; */
 }
 .dark-theme {
   content: url("assets/night-mode.svg");
