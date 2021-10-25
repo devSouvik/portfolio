@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Souvik Guria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,13 +20,10 @@
     <!-- navbar -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <a class="nav-link " id="dark-name" onclick="darkTheme(this)"> Dark Theme </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="https://devsouvik.github.io/resume/">Resume</a>
       </li>
     </ul>
     <!-- navbar ends -->
@@ -32,22 +32,22 @@
       <div class="row">
         <div class="col-lg-8 col-md-12 col-xs-12 col-12 px-5 py-5">
           <h1 class="display-3" id="about_me">Who is souvik?</h1>
-          <p>
+          <div>
             <ul>
                 <li>🎓 MCA 2022, Netaji Subhash Engineering College</li>
-                <li><img id="location" src="assets/location.svg" width="20" alt="">India, West Bengal, Kolkata</li>
+                <li><img src="https://dsc-logo-generator.web.app/dsc_icon-01.svg" width="20" alt="" /> Core member of Google Developer Students Club, NSEC</li>
+                <li><img class="location-dark" width="20">India, West Bengal, Kolkata</li>
                 <li>🤯 Lockdown became the turning point in my life</li>
-                <li><img src="https://dsc-logo-generator.web.app/dsc_icon-01.svg" width="20" alt=""> Core member of Google Developer Students Club, NSEC</li>
                 <li>📺 Love watching anime and trying out latest design trends as hobby/side hustle</li>
                 <li>🛡️ InfoSec Enthusiast</li>
                 <li><img src="assets/coffee.svg" width="20" alt=""> I belive, a perfect cup of coffee can be the ultimate solution for... everything</li>
             </ul>
-          </p>
+          </div>
         &nbsp;
           <p id="i_am_doing">
               <p class="h4">What am I doing now?</p>
               <ul>
-                  <li>🔁 Eat....Code...Anime...Sleep</li>
+                  <li>🔁 Eat... Code... Anime... Sleep</li>
                   <li>
                       👔 Working with <a href="https://celebaltech.com/">Celebal Technologies</a>
                   </li>
@@ -60,6 +60,7 @@
         </div>
         <div class="col-lg-4">
           <img
+            id="gif"
             src="https://github.com/devSouvik/devSouvik/blob/master/gif3.gif?raw=true"
             class="img-fluid"
             alt="gif"
@@ -69,17 +70,27 @@
       <div class="container text-center">
               <h4 >We can connect here !</h4>
               <div>
-                  <img src="assets/gmail.svg" id="icon" width="40" href="" alt="">
+                  <a href="mailto:souvikguriacp@gmail.com">
+                  <img src="assets/gmail.svg" id="icon" width="40" alt="">
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/souvik-guria-/">
+                  <img src="assets/linkedin.svg" id="icon" width="35" alt="">
+                  </a>
+
+                  <a href="https://twitter.com/orionLeo__">
+                  <img src="assets/twitter.svg" id="icon" width="40" alt="">
+                  </a>
+
+                  <a href="https://github.com/devSouvik">
+                        <img src="assets/github.svg" id="icon" width="40"  alt="">
+                  </a>
                   
-                  <img src="assets/linkedin.svg" id="icon" width="40" href="" alt="">
-                  
-                  <img src="assets/twitter.svg" id="icon" width="40" href="" alt="">
-                  
-                  <img src="assets/github.svg" id="icon" width="40" href="" alt="">
               </div>
           </div>
     </div>
     <!-- body ends -->
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
