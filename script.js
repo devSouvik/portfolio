@@ -10,5 +10,3 @@ function darkTheme(x) {
   }
   //   x.classList.toggle("location-light");
 }
-//   x.classList.toggle("dark-theme");
-//   x.classList.toggle("location-light");
