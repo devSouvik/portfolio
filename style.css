@@ -10,11 +10,14 @@ body {
 
 #about_me {
   font-family: "TheRainmaker";
-  color: rgb(211, 16, 16);
+  /* color: rgb(211, 16, 16); */
+  color: #0466c8;
 }
 
 .dark-mode #about_me {
-  color: #ebfffc;
+  /* color: #ebfffc; */
+  color: #28ffbf;
+  /* color: #ecac5d; */
 }
 
 .dark-mode {
@@ -51,29 +54,18 @@ a {
 .h4 {
   margin-bottom: 12px;
   font-family: "Comic Neue", cursive;
-  color: rgb(211, 16, 16);
+  /* color: rgb(211, 16, 16); */
+  color: #0466c8;
 }
 
 .dark-mode .h4 {
-  color: #acbdc2;
-}
-
-.light-theme {
-  content: "Light Theme";
-}
-.dark-theme {
-  content: url("assets/night-mode.svg");
-  width: 30;
-}
-.location-light {
-  content: url("https://icons8.com/icon/Z7Zyb5zzXReO/location");
-  width: 20;
-}
-.location-dark {
-  content: url("assets/location-dark.svg");
-  width: 20;
+  color: #28ffbf;
+  /* color: #ff0000; */
 }
 
 #icon:hover {
   width: 5%;
+}
+i {
+  width: 20;
 }

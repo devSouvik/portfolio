@@ -8,5 +8,4 @@ function darkTheme(x) {
   } else {
     y.innerHTML = "Light Theme";
   }
-  //   x.classList.toggle("location-light");
 }
