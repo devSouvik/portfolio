@@ -25,11 +25,12 @@
       href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
     />
   </head>
-  <body>
+  <!-- This branch is meant to make dark theme a primary one  -->
+  <body onmousedown="return false" onselectstart="return fasle">
     <!-- navbar -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link " id="dark-name" onclick="darkTheme(this)"> Dark Theme </a>
+        <a class="nav-link " id="dark-name" onclick="darkTheme(this)"> Light Theme </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://devsouvik.github.io/resume/">Resume</a>
@@ -71,7 +72,7 @@
         <div class="col-lg-4">
           <img
             id="gif"
-            src="https://github.com/devSouvik/devSouvik/blob/master/gif3.gif?raw=true"
+            src="assets/night.gif"
             class="img-fluid"
             alt="gif"
           />
