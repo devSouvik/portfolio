@@ -58,11 +58,6 @@ a {
   text-decoration: none;
 }
 
-#icon {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .h4 {
   margin-bottom: 12px;
   font-family: "Comic Neue", cursive;
@@ -71,13 +66,6 @@ a {
 
 .dark-mode .h4 {
   color: #0466c8;
-}
-
-#icon:hover {
-  width: 5%;
-}
-i {
-  width: 20;
 }
 
 #copyright {
@@ -172,10 +160,6 @@ i {
 #icons li:nth-child(4) a:hover::before {
   background: #000;
 }
-
-/* #icons li a:hover {
-  color: #ffffff;
-} */
 
 /* for dark i.e for white screen*/
 .dark-mode #icons li a {
