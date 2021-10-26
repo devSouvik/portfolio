@@ -1,3 +1,5 @@
+/* .dark-mode will contain all the colors and specifications of light mode */
+
 @font-face {
   font-family: TheRainmaker;
   src: url(fonts/The\ Rainmaker.otf);
@@ -5,6 +7,8 @@
 
 body {
   margin: 10px;
+  background-color: #273146;
+  color: white;
 }
 
 #info {
@@ -13,21 +17,33 @@ body {
 #doing {
   font-family: "Ubuntu", sans-serif;
 }
-#about_me {
-  font-family: "TheRainmaker";
+
+.dark-mode #about_me {
   color: #0466c8;
 }
 
-.dark-mode #about_me {
+#about_me {
+  font-family: "TheRainmaker";
   color: #28ffbf;
+}
+dark-mode #about_me {
+  color: #ffffff;
+  margin-top: 10px;
 }
 
 .dark-mode {
-  background-color: #273146;
-  color: white;
+  background-color: #ffffff;
+  color: black;
 }
 .dark-mode #gif {
-  content: url("assets/night.gif");
+  content: url("assets/day1.gif");
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+#gif {
   margin-top: 5%;
   display: block;
   margin-left: auto;
@@ -42,10 +58,6 @@ a {
   text-decoration: none;
 }
 
-#about_me {
-  margin-top: 10px;
-}
-
 #icon {
   margin-left: 5px;
   margin-right: 5px;
@@ -54,11 +66,11 @@ a {
 .h4 {
   margin-bottom: 12px;
   font-family: "Comic Neue", cursive;
-  color: #0466c8;
+  color: #28ffbf;
 }
 
 .dark-mode .h4 {
-  color: #28ffbf;
+  color: #0466c8;
 }
 
 #icon:hover {
