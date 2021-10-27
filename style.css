@@ -58,11 +58,6 @@ a {
   text-decoration: none;
 }
 
-#icon {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .h4 {
   margin-bottom: 12px;
   font-family: "Comic Neue", cursive;
@@ -73,13 +68,145 @@ a {
   color: #0466c8;
 }
 
-#icon:hover {
-  width: 5%;
-}
-i {
-  width: 20;
-}
-
 #copyright {
   margin-top: 10px;
+}
+#icons-div {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#icons li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+#icons li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 30px;
+  /* color: #000; */
+  transition: 0.5s;
+}
+
+#gmail-icon {
+  color: #bb001b;
+}
+#gmail-icon:hover {
+  color: #ffffff;
+}
+#linkedin-icon {
+  color: #0e76a8;
+}
+#linkedin-icon:hover {
+  color: #ffffff;
+}
+#twitter-icon {
+  color: #1da1f2;
+}
+#twitter-icon:hover {
+  color: #ffffff;
+}
+#github-icon {
+  color: #000;
+}
+#github-icon:hover {
+  color: #ffffff;
+}
+
+#icons li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+#icons li a:hover::before {
+  transform: scale(1);
+}
+
+#icons li:nth-child(1) a:hover::before {
+  background: #bb001b;
+  color: #ffffff;
+}
+#icons li:nth-child(2) a:hover::before {
+  background: #0e76a8;
+}
+#icons li:nth-child(3) a:hover::before {
+  background: #1da1f2;
+}
+#icons li:nth-child(4) a:hover::before {
+  background: #000;
+}
+
+/* for dark i.e for white screen*/
+.dark-mode #icons li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 30px;
+  /* color: rgb(36, 34, 34); */
+  transition: 0.5s;
+}
+
+.dark-mode #icons li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.dark-mode #icons li a:hover::before {
+  transform: scale(1);
+}
+
+.dark-mode #icons li:nth-child(1) a:hover::before {
+  background: #bb001b;
+}
+.dark-mode #icons li:nth-child(2) a:hover::before {
+  background: #0e76a8;
+}
+.dark-mode #icons li:nth-child(3) a:hover::before {
+  background: #1da1f2;
+}
+.dark-mode #icons li:nth-child(4) a:hover::before {
+  background: #333;
+}
+
+.dark-mode #icons li a:hover {
+  color: #ffffff;
 }
